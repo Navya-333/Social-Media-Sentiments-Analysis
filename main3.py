@@ -11,7 +11,6 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 
-
 nltk.download('stopwords', quiet=True)  # Download stopwords if not already present
 nltk.download('punkt', quiet=True) # Download punkt for sentence tokenization
 
@@ -77,7 +76,6 @@ if uploaded_file is not None:
 
     except Exception as e:
         st.error(f"An error occurred: {e}")
-
 
 message = st.text_input("Enter text to analyze:")
 
